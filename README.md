@@ -1,9 +1,9 @@
-# Vue3 Template
+# Vue3 UI Library Template
 
-- [x] Vite
-- [ ] Storybook
-- [x] i18n
 - [x] Typescript
+- [x] Scss
+- [x] Storybook
+- [x] Vite
 - [x] Vitest
 - [x] EditorConfig
 - [x] Prettier
@@ -13,24 +13,21 @@
 - [ ] lint-staged
 - [x] commitlint
 - [x] Commitizen
-- [x] Api Mock (Mock Service Worker)
-- [ ] Image Minify
-- [ ] Axios
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Scaffolding your vue 3 project
+## Scaffolding your vue 3 UI Library project
 
 With NPM:
 
 ```bash
-npm create @app-template/app@latest my-vue3-project -- --template vue3
+npm create @app-template/app@latest my-vue3-ui-library-project -- --template vue3-ui-lib
 ```
 
 With PNPM:
 
 ```bash
-pnpm create @app-template/app@latest my-vue3-project --template vue3
+pnpm create @app-template/app@latest my-vue3-ui-library-project --template vue3-ui-lib
 ```
 
 ## Recommended IDE Setup
@@ -74,22 +71,6 @@ npm run build
 
 ```sh
 npm run test:unit
-```
-
-### Run End-to-End Tests with [Cypress](https://www.cypress.io/)
-
-```sh
-npm run test:e2e:dev
-```
-
-This runs the end-to-end tests against the Vite development server.
-It is much faster than the production build.
-
-But it's still recommended to test the production build with `test:e2e` before deploying (e.g. in CI environments):
-
-```sh
-npm run build
-npm run test:e2e
 ```
 
 ### Lint with [ESLint](https://eslint.org/)

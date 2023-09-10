@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "storybook dev -p 6006",
-    "build": "run-p type-check build-only",
+    "build": "run-p build:type build:lib",
     "build:storybook": "storybook build",
     "build:type": "vue-tsc --declaration --emitDeclarationOnly --project tsconfig.app.json",
     "build:lib": "vite build",

@@ -14,7 +14,7 @@
 - [x] commitlint
 - [x] Commitizen
 
-This template should help get you started developing with Vue 3 in Vite.
+This template should help get you started developing with Vue 3 UI Library in Vite.
 
 ## Scaffolding your vue 3 UI Library project
 
@@ -52,29 +52,29 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 ## Project Setup
 
 ```sh
-npm install
+pnpm install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+pnpm dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+pnpm build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
-npm run test:unit
+pnpm test:unit
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+pnpm lint
 ```

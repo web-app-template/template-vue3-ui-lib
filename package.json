@@ -1,16 +1,26 @@
 {
   "name": "template-vue3-ui-lib",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/lib.es.js",
+  "module": "./dist/lib.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/lib.es.js"
+    }
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "run-p build:type build:lib",
     "build:storybook": "storybook build",
     "build:type": "vue-tsc --declaration --emitDeclarationOnly --project tsconfig.app.json",
     "build:lib": "vite build",
-    "preview": "vite preview",
     "test:unit": "vitest --environment jsdom --root src/",
-    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
+    "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prepare": "husky install",
     "cz": "cz"
